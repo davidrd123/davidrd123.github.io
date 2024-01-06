@@ -12,6 +12,23 @@ h2 {
   font-weight: bold;
 }
 
+.img-fade-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-fade-container img.top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.img-fade-container:hover img.top {
+  opacity: 1;
+}
+
 .inner {
   text-align: center;
 }
@@ -83,17 +100,6 @@ a.case-study-btn:hover {
   .umbra-demo img {
       width: 100%;
   }
-}
-
-.ableContainer p {
-  margin: 1em 0 2em 0;
-}
-
-.ableArchitectureContainer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .imageAnchor {
